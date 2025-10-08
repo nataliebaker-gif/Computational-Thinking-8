@@ -95,26 +95,26 @@ if answer == "A" :
     entrepreneur_points += 1
 print ("****************************************************************************************")
 #end
-if athlete_points>=teacher_points and athlete_points>=doctor_points and athlete_points>=entrepreneur_points and athlete_points>=business_points and athlete_points>=Janitor_points and athlete_points>=Unemployed_points :
-    print("You made it to the end! Based on you results, you should be an athlete!")
+
+if athlete_points>teacher_points and athlete_points>doctor_points and athlete_points>entrepreneur_points and athlete_points>business_points and athlete_points>Janitor_points and athlete_points>=Unemployed_points :
+ print("You made it to the end! Based on your results, you would be an amazing athlete!")
 
 elif teacher_points>=athlete_points and teacher_points>=doctor_points and teacher_points>=entrepreneur_points and teacher_points>=business_points and teacher_points>=Janitor_points and teacher_points>=Unemployed_points :
-    print("You made it to the end! Based on your results, you would be a great teacher!")
+ print("You made it to the end! Based on your results, you would be a great teacher!")
 
 elif doctor_points>=athlete_points and doctor_points>=teacher_points and doctor_points>=entrepreneur_points and doctor_points>=business_points and doctor_points>=Janitor_points and doctor_points>=Unemployed_points :
-    print("You made it to the end! Based on your results, you would be an amazing doctor!")
+ print("You made it to the end! Based on your results, you would be an amazing doctor!")
 
 elif entrepreneur_points>=athlete_points and entrepreneur_points>=teacher_points and entrepreneur_points>=doctor_points and entrepreneur_points>=business_points and entrepreneur_points>=Janitor_points and entrepreneur_points>=Unemployed_points :
-    print("You made it to the end! Based on your results, you would be an entrepreneur!")
+ print("You made it to the end! Based on your results, you would be an entrepreneur!")
 
 elif business_points>=athlete_points and business_points>=teacher_points and business_points>=entrepreneur_points and business_points>=Janitor_points and business_points>=Unemployed_points :
-    print("You made it to the end! Based on your results, you would work in business!")
+ print("You made it to the end! Based on your results, you would work in business!")
 
 elif Janitor_points>=athlete_points and Janitor_points>=teacher_points and Janitor_points>=entrepreneur_points and Janitor_points>=business_points and Janitor_points>=Unemployed_points :
-    print("You made it to the end! Based on your results, you would be an amazing Janitor!")
+ print("You made it to the end! Based on your results, you would be an amazing Janitor!")
 
-elif Unemployed_points>=athlete_points and Unemployed_points>=teacher_points and Unemployed_points>=entrepreneur_points and Unemployed_points>=business_points and Unemployed_points>=Janitor_points :
-    print("You made it to the end! Based on your results, you would be Unemployed! Congrats! (: ")
+elif Unemployed_points>=athlete_points and Unemployed_points>=teacher_points and Unemployed_points>=entrepreneur_points and Unemployed_points>=business_points and Unemployed_points>=Janitor_points : print("You made it to the end! Based on your results, you would be Unemployed! Congrats! (: ")
 
 
 

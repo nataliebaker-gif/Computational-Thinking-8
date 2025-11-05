@@ -1,3 +1,4 @@
+import turtle
 # Section 1 - Helper functions (DON'T CHANGE!!)
 import turtle, math, time, random
 def set_background(image_filename):
@@ -48,39 +49,28 @@ window = turtle.Screen()
 window.tracer(0)
 
 
+t = turtle.Turtle ()
+turtle.Screen().bgcolor ("Misty Rose")
 
-######################################################################
-# https://en.wikipedia.org/wiki/Web_colors#Extended_colors
-# Section 2 - Your code
-set_background("ocean")
-
-# rectangles
-draw_rectangle("white", 100, 100, 200, 200)
-draw_rectangle("blue", -100, 100, 200, 200)
-draw_rectangle("blue", 100, -100, 200, 200)
-draw_rectangle("white",-100,-100, 200, 200)
-
-# all of my sprites 
-s1 = create_sprite("dog", 100, 100)
-s2 = create_sprite("natalie", -100, 100)
-s3 = create_sprite("", -100, -100)
-s4 = create_sprite("kitten", 100, -100)
-
-# messages
-message1 = create_sprite("alien",-200,200)
-message1.color("black")
-message1.write("Natalie! ",font = ("Arial", 40, "normal"))
-message1.hideturtle()
-
-message2 = create_sprite("alien",-200,-250)
-message2.color("black")
-message2.write("I love tennis! ",font = ("Arial", 40, "normal"))
-message2.hideturtle()
+# turtle commands
+t.penup()
+t.goto (-300, -200)
+t.pendown()
+t.speed (1000)
+# color of turtle 
+t.color ("cyan")
 
 
-######################################################################
+
+# the tree colors I used
+colors = ["light coral","powder blue","light pink","peach puff","Light yellow"]
+for i in range (3000):
+    t.color (colors [i % 5] )
+    t.forward (600)
+    t.left (120+ 1)
+	
+s1 = create_sprite("me", 0, -50)
 
 
-# Section 3 - Keeping the window open (DON'T CHANGE!!)
-window.update()
-turtle.exitonclick()
+window.update ()
+turtle.exitonclick ()

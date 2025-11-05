@@ -1,4 +1,3 @@
-import turtle
 # Section 1 - Helper functions (DON'T CHANGE!!)
 import turtle, math, time, random
 def set_background(image_filename):
@@ -49,27 +48,38 @@ window = turtle.Screen()
 window.tracer(0)
 
 
-t = turtle.Turtle ()
-turtle.Screen().bgcolor ("Misty Rose")
+# Section 2: Setup
+# TODO - create your player character
+# TODO - set your background
+# TODO - set the starting value for your variable 
 
-# turtle commands
-t.penup()
-t.goto (-300, -200)
-t.pendown()
-t.speed (1000)
-# color of turtle 
-t.color ("cyan")
+create_sprite ("Benny", 0,0)
+set_background("")
 
 
-# the tree colors I used
-colors = ["light coral","powder blue","light pink","peach puff","Light yellow"]
-for i in range (3000):
-    t.color (colors [i % 5] )
-    t.forward (600)
-    t.left (120+ 1)
+# Section 3: Controls
+# TODO - define your controls
+# TODO - pick keys for each control
+
+# Section 4: Game Loop
+window.listen()
+timer = 0
+while True:
+	time.sleep(0.1)
+	timer += 1  
+	 
+    
+ 	# TODO - code for automatic actions
+
+
+
+
+
+
+	window.update()
+
+	# if :
+	# 	break
 	
-s1 = create_sprite("me", 0, -50)
 
-
-window.update ()
-turtle.exitonclick ()
+print("Game Over")
